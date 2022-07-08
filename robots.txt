@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://mitolog.github.io/sitemap.xml
