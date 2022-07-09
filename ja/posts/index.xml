@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Marginals LLC.</title>
-    <link>https://mitolog.github.io/posts/</link>
+    <link>https://mitolog.github.io/ja/posts/</link>
     <description>Recent content in Posts on Marginals LLC.</description>
     <image>
       <url>https://mitolog.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://mitolog.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Mar 2021 00:00:03 +0900</lastBuildDate><atom:link href="https://mitolog.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Mar 2021 00:00:03 +0900</lastBuildDate><atom:link href="https://mitolog.github.io/ja/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://mitolog.github.io/posts/marginals/profile/</link>
+      <link>https://mitolog.github.io/ja/posts/marginals/profile/</link>
       <pubDate>Mon, 15 Mar 2021 00:00:03 +0900</pubDate>
       
-      <guid>https://mitolog.github.io/posts/marginals/profile/</guid>
-      <description>Company Info Company name Marginals LLC. Representative Yuhei Miyazato Established 2021, March Capital 2,000,000 JPY Services Mobile app development Address 154-0046 1-28-2, Syoutou, Shibuya-ku, Tokyo, Japan </description>
+      <guid>https://mitolog.github.io/ja/posts/marginals/profile/</guid>
+      <description>会社概要 会社名 Marginals LLC. 代表 宮里 悠平 設立 2021 年 3 月 資本金 2 百万円 事業内容 モバイルアプリの受託・新規開発 住所 〒 154-0046 東京都渋谷区松濤 1 丁目 28-2 </description>
     </item>
     
   </channel>
