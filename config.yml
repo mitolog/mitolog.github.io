@@ -16,39 +16,73 @@ minify:
 
 languages:
   en:
-      languageName: "En"
-      weight: 1
-      taxonomies:
-        category: categories
-        tag: tags
-        series: series
-      menu:
-        main:
-          - identifier: categories
-            name: categories
-            url: /categories/
-            weight: 10
-          - identifier: tags
-            name: tags
-            url: /tags/
-            weight: 20
+    languageName: "En"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - identifier: categories
+          name: categories
+          url: /categories/
+          weight: 10
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 20
+    # profile-mode
+    profileMode:
+      enabled: true # needs to be explicitly set
+      title: " "
+      subtitle: " "
+      imageUrl: "logo_black_text.png"
+      imageWidth: 709
+      imageHeight: 271
+      imageTitle: company logo
+      buttons:
+        - name: Info
+          url: posts/marginals/profile
+        - name: Posts
+          url: posts
+        - name: Tags
+          url: tags
+
   ja:
-      languageName: "Ja"
-      weight: 1
-      taxonomies:
-        category: JAcategories
-        tag: JAtags
-        series: JAseries
-      menu:
-        main:
-          - identifier: JAcategories
-            name: categories
-            url: /jacategories/
-            weight: 10
-          - identifier: JAtags
-            name: tags
-            url: /jatags/
-            weight: 20
+    languageName: "Ja"
+    weight: 1
+    taxonomies:
+      category: JAcategories
+      tag: JAtags
+      series: JAseries
+    menu:
+      main:
+        - identifier: JAcategories
+          name: categories
+          url: /jacategories/
+          weight: 10
+        - identifier: JAtags
+          name: tags
+          url: /jatags/
+          weight: 20
+    # profile-mode
+    profileMode:
+      enabled: true # needs to be explicitly set
+      title: " "
+      subtitle: " "
+      imageUrl: "logo_black_text.png"
+      imageWidth: 709
+      imageHeight: 271
+      imageTitle: company logo
+      buttons:
+        - name: Info
+          url: posts/marginals/profile
+        - name: Posts
+          url: posts
+        - name: Tags
+          url: jatags
+
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -91,23 +125,6 @@ params:
     text: " "
     icon: "apple_touch_icon.png"
     iconHeight: 35
-
-  # profile-mode
-  profileMode:
-    enabled: true # needs to be explicitly set
-    title: " "
-    subtitle: " "
-    imageUrl: "logo_black_text.png"
-    imageWidth: 709
-    imageHeight: 271
-    imageTitle: company logo
-    buttons:
-      - name: Info
-        url: posts/marginals/profile
-      - name: Blog
-        url: posts/blog
-      - name: Tags
-        url: tags
 
   # home-info mode
   homeInfoParams:
