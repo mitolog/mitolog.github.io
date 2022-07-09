@@ -2,6 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://marginals.jp/ja/jacategories/blog/</loc>
+    <lastmod>2022-07-09T00:00:03+09:00</lastmod>
+  </url><url>
+    <loc>https://marginals.jp/ja/jacategories/</loc>
+    <lastmod>2022-07-09T00:00:03+09:00</lastmod>
+  </url><url>
+    <loc>https://marginals.jp/ja/jatags/</loc>
+    <lastmod>2022-07-09T00:00:03+09:00</lastmod>
+  </url><url>
+    <loc>https://marginals.jp/ja/</loc>
+    <lastmod>2022-07-09T00:00:03+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marginals.jp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://marginals.jp/ja/"
+                />
+  </url><url>
+    <loc>https://marginals.jp/ja/posts/</loc>
+    <lastmod>2022-07-09T00:00:03+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marginals.jp/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://marginals.jp/ja/posts/"
+                />
+  </url><url>
+    <loc>https://marginals.jp/ja/jatags/swiftui/</loc>
+    <lastmod>2022-07-09T00:00:03+09:00</lastmod>
+  </url><url>
+    <loc>https://marginals.jp/ja/posts/swiftui-passcode/</loc>
+    <lastmod>2022-07-09T00:00:03+09:00</lastmod>
+  </url><url>
+    <loc>https://marginals.jp/ja/jacategories/tech/</loc>
+    <lastmod>2022-07-09T00:00:03+09:00</lastmod>
+  </url><url>
     <loc>https://marginals.jp/ja/posts/marginals/profile/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
     <xhtml:link
@@ -15,36 +59,6 @@
                 href="https://marginals.jp/ja/posts/marginals/profile/"
                 />
   </url><url>
-    <loc>https://marginals.jp/ja/</loc>
-    <lastmod>2021-03-15T00:00:03+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marginals.jp/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://marginals.jp/ja/"
-                />
-  </url><url>
-    <loc>https://marginals.jp/ja/posts/</loc>
-    <lastmod>2021-03-15T00:00:03+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marginals.jp/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://marginals.jp/ja/posts/"
-                />
-  </url><url>
-    <loc>https://marginals.jp/ja/jacategories/</loc>
-  </url><url>
     <loc>https://marginals.jp/ja/jaseries/</loc>
-  </url><url>
-    <loc>https://marginals.jp/ja/jatags/</loc>
   </url>
 </urlset>

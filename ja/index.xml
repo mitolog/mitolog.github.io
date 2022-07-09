@@ -9,7 +9,25 @@
       <link>https://marginals.jp/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Mar 2021 00:00:03 +0900</lastBuildDate><atom:link href="https://marginals.jp/ja/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jul 2022 00:00:03 +0900</lastBuildDate><atom:link href="https://marginals.jp/ja/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SwiftUI で Passcode のサンプルを作ってみた</title>
+      <link>https://marginals.jp/ja/posts/swiftui-passcode/</link>
+      <pubDate>Sat, 09 Jul 2022 00:00:03 +0900</pubDate>
+      
+      <guid>https://marginals.jp/ja/posts/swiftui-passcode/</guid>
+      <description>ソースコード https://github.com/mitolog/SwiftUI-Passcode
+なぜ作ったか iOS の touchID や faceID などの生体認証と連携すれば簡単かもしれないけど、今回は独立した機能としてのパスコード画面が必要でした。
+また、現在進行中の SwiftUI + Clean Architecture + Combine なプロジェクトだったのですが、SwiftUI 製のいい感じのサンプルやライブラリがなかったので、作成してみました。といっても UI の部分だけがゼロベースであとは既存の組み合わせでうまく機能してくれただけなんですが！
+どんな機能？ 画面をロックしたり、ホームボタンで閉じて、再度アプリをひらいたときにパスコード画面がでてくる 0~9 の数値を任意の桁数で入力してアンロックする 間違えた場合は、シェイクアニメーションが走り、入力された数値がリセットされる フォントや色などのパラメータを init 時に指定できる ざっくりいうとこんな感じです。動きは以下の gif を確認ください
+仕組み(というかもはや謝辞) UI コアの部分は Passcode フォルダ配下にある
+PasscodeField.swift LegacyTextField.swift ShakeAnimation.swift この 3 つのファイルで構成されています。
+PasscodeField が本体で、SwiftUI と Combine で構成されています。細かい UI の説明はソースコードをみた方がはやいと思うので割愛しますが、こだわりポイントとして 2 点だけ。カーソルの点滅具合と、入力された数値が時間差で ● に変わるところはアニメーションの仕組みを理解しながら頑張りました！
+LegacyTextField は、画面表示時にキーボードを出すために UIResponder を利用したかったので、stackoverflow の記事と、hackingwithswift の記事をほぼそのまま引っ張ってきています。
+※ 今回は iOS14 もサポートしたかったので、そのようにしましたが、iOS15 以降であれば、@FocusState を使うと良さそうです。
+ShakeAnimation は、皆さんおなじみstack overflowより。そして、シェイクアニメーションの後、入力したパスコードをリセットしたかったので、ANTOINE VAN DER LEE さんの記事より抜粋。</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://marginals.jp/ja/posts/marginals/profile/</link>

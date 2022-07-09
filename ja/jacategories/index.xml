@@ -8,6 +8,25 @@
       <url>https://marginals.jp/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://marginals.jp/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://marginals.jp/ja/jacategories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 09 Jul 2022 00:00:03 +0900</lastBuildDate><atom:link href="https://marginals.jp/ja/jacategories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://marginals.jp/ja/jacategories/blog/</link>
+      <pubDate>Sat, 09 Jul 2022 00:00:03 +0900</pubDate>
+      
+      <guid>https://marginals.jp/ja/jacategories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>https://marginals.jp/ja/jacategories/tech/</link>
+      <pubDate>Sat, 09 Jul 2022 00:00:03 +0900</pubDate>
+      
+      <guid>https://marginals.jp/ja/jacategories/tech/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
