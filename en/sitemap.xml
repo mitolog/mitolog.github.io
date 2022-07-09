@@ -2,53 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mitolog.github.io/posts/marginals/profile/</loc>
+    <loc>https://marginals.jp/posts/marginals/profile/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://mitolog.github.io/ja/posts/marginals/profile/"
+                href="https://marginals.jp/ja/posts/marginals/profile/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mitolog.github.io/posts/marginals/profile/"
+                href="https://marginals.jp/posts/marginals/profile/"
                 />
   </url><url>
-    <loc>https://mitolog.github.io/tags/marginals/</loc>
+    <loc>https://marginals.jp/tags/marginals/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
   </url><url>
-    <loc>https://mitolog.github.io/</loc>
+    <loc>https://marginals.jp/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://mitolog.github.io/ja/"
+                href="https://marginals.jp/ja/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mitolog.github.io/"
+                href="https://marginals.jp/"
                 />
   </url><url>
-    <loc>https://mitolog.github.io/posts/</loc>
+    <loc>https://marginals.jp/posts/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://mitolog.github.io/ja/posts/"
+                href="https://marginals.jp/ja/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mitolog.github.io/posts/"
+                href="https://marginals.jp/posts/"
                 />
   </url><url>
-    <loc>https://mitolog.github.io/tags/</loc>
+    <loc>https://marginals.jp/tags/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
   </url><url>
-    <loc>https://mitolog.github.io/categories/</loc>
+    <loc>https://marginals.jp/categories/</loc>
   </url><url>
-    <loc>https://mitolog.github.io/series/</loc>
+    <loc>https://marginals.jp/series/</loc>
   </url>
 </urlset>

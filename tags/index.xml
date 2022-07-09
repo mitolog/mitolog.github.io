@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Marginals LLC.</title>
-    <link>https://mitolog.github.io/tags/</link>
+    <link>https://marginals.jp/tags/</link>
     <description>Recent content in Tags on Marginals LLC.</description>
     <image>
-      <url>https://mitolog.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://mitolog.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://marginals.jp/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://marginals.jp/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Mar 2021 00:00:03 +0900</lastBuildDate><atom:link href="https://mitolog.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Mar 2021 00:00:03 +0900</lastBuildDate><atom:link href="https://marginals.jp/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Marginals</title>
-      <link>https://mitolog.github.io/tags/marginals/</link>
+      <link>https://marginals.jp/tags/marginals/</link>
       <pubDate>Mon, 15 Mar 2021 00:00:03 +0900</pubDate>
       
-      <guid>https://mitolog.github.io/tags/marginals/</guid>
+      <guid>https://marginals.jp/tags/marginals/</guid>
       <description></description>
     </item>
     

@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mitolog.github.io/ja/posts/marginals/profile/</loc>
+    <loc>https://marginals.jp/ja/posts/marginals/profile/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mitolog.github.io/posts/marginals/profile/"
+                href="https://marginals.jp/posts/marginals/profile/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://mitolog.github.io/ja/posts/marginals/profile/"
+                href="https://marginals.jp/ja/posts/marginals/profile/"
                 />
   </url><url>
-    <loc>https://mitolog.github.io/ja/</loc>
+    <loc>https://marginals.jp/ja/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mitolog.github.io/"
+                href="https://marginals.jp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://mitolog.github.io/ja/"
+                href="https://marginals.jp/ja/"
                 />
   </url><url>
-    <loc>https://mitolog.github.io/ja/posts/</loc>
+    <loc>https://marginals.jp/ja/posts/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mitolog.github.io/posts/"
+                href="https://marginals.jp/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://mitolog.github.io/ja/posts/"
+                href="https://marginals.jp/ja/posts/"
                 />
   </url><url>
-    <loc>https://mitolog.github.io/ja/jacategories/</loc>
+    <loc>https://marginals.jp/ja/jacategories/</loc>
   </url><url>
-    <loc>https://mitolog.github.io/ja/jaseries/</loc>
+    <loc>https://marginals.jp/ja/jaseries/</loc>
   </url><url>
-    <loc>https://mitolog.github.io/ja/jatags/</loc>
+    <loc>https://marginals.jp/ja/jatags/</loc>
   </url>
 </urlset>
