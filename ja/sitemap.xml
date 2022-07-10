@@ -42,6 +42,16 @@
   </url><url>
     <loc>https://marginals.jp/ja/posts/swiftui-passcode/</loc>
     <lastmod>2022-07-09T00:00:03+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marginals.jp/posts/swiftui-passcode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://marginals.jp/ja/posts/swiftui-passcode/"
+                />
   </url><url>
     <loc>https://marginals.jp/ja/jacategories/tech/</loc>
     <lastmod>2022-07-09T00:00:03+09:00</lastmod>

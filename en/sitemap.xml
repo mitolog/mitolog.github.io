@@ -15,6 +15,12 @@
                 href="https://marginals.jp/posts/marginals/profile/"
                 />
   </url><url>
+    <loc>https://marginals.jp/categories/blog/</loc>
+    <lastmod>2021-03-15T00:00:03+09:00</lastmod>
+  </url><url>
+    <loc>https://marginals.jp/categories/</loc>
+    <lastmod>2021-03-15T00:00:03+09:00</lastmod>
+  </url><url>
     <loc>https://marginals.jp/tags/marginals/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
   </url><url>
@@ -31,6 +37,19 @@
                 href="https://marginals.jp/"
                 />
   </url><url>
+    <loc>https://marginals.jp/posts/swiftui-passcode/</loc>
+    <lastmod>2021-03-15T00:00:03+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://marginals.jp/ja/posts/swiftui-passcode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marginals.jp/posts/swiftui-passcode/"
+                />
+  </url><url>
     <loc>https://marginals.jp/posts/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
     <xhtml:link
@@ -44,10 +63,14 @@
                 href="https://marginals.jp/posts/"
                 />
   </url><url>
+    <loc>https://marginals.jp/tags/swiftui/</loc>
+    <lastmod>2021-03-15T00:00:03+09:00</lastmod>
+  </url><url>
     <loc>https://marginals.jp/tags/</loc>
     <lastmod>2021-03-15T00:00:03+09:00</lastmod>
   </url><url>
-    <loc>https://marginals.jp/categories/</loc>
+    <loc>https://marginals.jp/categories/tech/</loc>
+    <lastmod>2021-03-15T00:00:03+09:00</lastmod>
   </url><url>
     <loc>https://marginals.jp/series/</loc>
   </url>

@@ -19,5 +19,17 @@
       <description>Company Info Company name Marginals LLC. Representative Yuhei Miyazato Established 2021, March Capital 2,000,000 JPY Services Mobile app development Address 154-0046 1-28-2, Syoutou, Shibuya-ku, Tokyo, Japan </description>
     </item>
     
+    <item>
+      <title>Passcodeview made with SwiftUI</title>
+      <link>https://marginals.jp/posts/swiftui-passcode/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:03 +0900</pubDate>
+      
+      <guid>https://marginals.jp/posts/swiftui-passcode/</guid>
+      <description>Source Code https://github.com/mitolog/SwiftUI-Passcode
+Motivation On one of my client&amp;rsquo;s project, I need to prepare passcode view that works independent of touch ID or face ID.
+Moreover, the project is totally craeted by SwiftUI, so I was looking for some libraries or samples that is written in SwiftUI and meets the functionality needed. But I couldn&amp;rsquo;t find appropriate one. So, I needed to implement by myself.
+The Functionality When an user returned to the app after locking the window or closing the app with pushing the home button, the app always needs to show the passcode view.</description>
+    </item>
+    
   </channel>
 </rss>

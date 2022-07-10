@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Marginals LLC.</title>
-    <link>https://marginals.jp/</link>
-    <description>Recent content on Marginals LLC.</description>
+    <title>Blog on Marginals LLC.</title>
+    <link>https://marginals.jp/categories/blog/</link>
+    <description>Recent content in Blog on Marginals LLC.</description>
     <image>
       <url>https://marginals.jp/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://marginals.jp/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Mar 2021 00:00:03 +0900</lastBuildDate><atom:link href="https://marginals.jp/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://marginals.jp/posts/marginals/profile/</link>
-      <pubDate>Mon, 15 Mar 2021 00:00:03 +0900</pubDate>
-      
-      <guid>https://marginals.jp/posts/marginals/profile/</guid>
-      <description>Company Info Company name Marginals LLC. Representative Yuhei Miyazato Established 2021, March Capital 2,000,000 JPY Services Mobile app development Address 154-0046 1-28-2, Syoutou, Shibuya-ku, Tokyo, Japan </description>
-    </item>
-    
+    <lastBuildDate>Mon, 15 Mar 2021 00:00:03 +0900</lastBuildDate><atom:link href="https://marginals.jp/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Passcodeview made with SwiftUI</title>
       <link>https://marginals.jp/posts/swiftui-passcode/</link>
