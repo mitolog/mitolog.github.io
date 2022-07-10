@@ -7,7 +7,7 @@ JAtags: ["SwiftUI"]
 JAcategories: ["Blog", "Tech"]
 author: "mito"
 # author: ["Me", "You"] # multiple authors
-showToc: false
+showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
@@ -32,9 +32,9 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
-    URL: "https://marginals.jp"
-    Text: "edit" # edit text
-    appendFilePath: false # to append file path to Edit link
+    URL: "https://github.com/mitolog/mitolog.github.io/tree/main/content"
+    Text: "修正を提案" # edit text
+    appendFilePath: true # to append file path to Edit link
 ---
 
 ## ソースコード

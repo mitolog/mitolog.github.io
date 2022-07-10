@@ -3,12 +3,13 @@ title: "Passcodeview made with SwiftUI"
 date: 2021-03-15T00:00:03+09:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["Blog"]
+tags: ["SwiftUI"]
+categories: ["Blog", "Tech"]
 author: "mito"
 # author: ["Me", "You"] # multiple authors
-showToc: false
+showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: false
 description: ""
@@ -31,70 +32,94 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
-    URL: "https://marginals.jp"
-    Text: "edit" # edit text
-    appendFilePath: false # to append file path to Edit link
+    URL: "https://github.com/mitolog/mitolog.github.io/tree/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
 ---
 
-# SwiftUI で Passcode のサンプルを作ってみた
-
-## ソースコード
+## Source Code
 
 https://github.com/mitolog/SwiftUI-Passcode
 
-## なぜ作ったか
+## Motivation
 
-iOS の touchID や faceID などの生体認証と連携すれば簡単かもしれないけど、今回は独立した機能としてのパスコード画面が必要でした。
+On one of my client's project, I need to prepare passcode view that works independent of touch ID or face ID.
 
-また、現在進行中の SwiftUI + Clean Architecture + Combine なプロジェクトだったのですが、SwiftUI 製のいい感じのサンプルやライブラリがなかったので、作成してみました。といっても UI の部分だけがゼロベースであとは既存の組み合わせでうまく機能してくれただけなんですが！
+Moreover, the project is totally craeted by SwiftUI, so I was looking for some libraries or samples that is written in SwiftUI and meets the functionality needed. But I couldn't find appropriate one. So, I needed to implement by myself.
 
-## どんな機能？
+## The Functionality
 
-- 画面をロックしたり、ホームボタンで閉じて、再度アプリをひらいたときにパスコード画面がでてくる
-- 0~9 の数値を任意の桁数で入力してアンロックする
-- 間違えた場合は、シェイクアニメーションが走り、入力された数値がリセットされる
-- フォントや色などのパラメータを init 時に指定できる
+- When an user returned to the app after locking the window or closing the app with pushing the home button, the app always needs to show the passcode view.
+- An user can unlock the passcode view by choosing numbers from 0 to 9 with pre-defined digits.
+- When a user fails to unlock, the shake animation is executed and resets the numbers a user has input.
+- You can set fonts and colors when init
 
-ざっくりいうとこんな感じです。動きは以下の gif を確認ください
+You can check how it works by the gif below:
 
 ![](https://raw.githubusercontent.com/wiki/mitolog/SwiftUI-Passcode/images/SwiftUI-Passcode.gif)
 
-## 仕組み(というかもはや謝辞)
+## How it works
 
-### UI
+---
 
-コアの部分は [Passcode フォルダ配下](https://github.com/mitolog/SwiftUI-Passcode/tree/main/PasscodeSample/Passcode)にある
+### The UI aspects
+
+The core UI consists of these files:
 
 - PasscodeField.swift
 - LegacyTextField.swift
 - ShakeAnimation.swift
 
-この 3 つのファイルで構成されています。
+located under the [Passcode folder](https://github.com/mitolog/SwiftUI-Passcode/tree/main/PasscodeSample/Passcode).
 
-PasscodeField が本体で、SwiftUI と Combine で構成されています。細かい UI の説明はソースコードをみた方がはやいと思うので割愛しますが、こだわりポイントとして 2 点だけ。カーソルの点滅具合と、入力された数値が時間差で ● に変わるところはアニメーションの仕組みを理解しながら頑張りました！
+`PasscodeField` is the main view and its made with SwiftUI and Combine.
 
-LegacyTextField は、画面表示時にキーボードを出すために UIResponder を利用したかったので、[stackoverflow の記事](https://stackoverflow.com/questions/56507839/swiftui-how-to-make-textfield-become-first-responder)と、[hackingwithswift の記事](https://www.hackingwithswift.com/example-code/uikit/how-to-limit-the-number-of-characters-in-a-uitextfield-or-uitextview)をほぼそのまま引っ張ってきています。
+The key points that I'd like to mention are:
 
-※ 今回は iOS14 もサポートしたかったので、そのようにしましたが、iOS15 以降であれば、@FocusState を使うと良さそうです。
+#### 1. The cusor and hideen letter imitation
 
-ShakeAnimation は、皆さんおなじみ[stack overflow](https://stackoverflow.com/questions/61619013/is-there-a-better-way-to-implement-a-shake-animation-in-swiftui)より。そして、シェイクアニメーションの後、入力したパスコードをリセットしたかったので、[ANTOINE VAN DER LEE さんの記事](https://www.avanderlee.com/swiftui/withanimation-completion-callback/)より抜粋。
+Because the passcode view itself is not using TextInputView, I need to imitate the cusor blinking and need to make the letter hidden some milliseconds after the user's input. I ended up learning that where to put the `.animation` is the key not to animate the properties that you don't want to.
 
-### window の取り回し
+#### 2. Toggle the keyboard
 
-.fullScreenCover 試してみたり、専用の View(Struct)を作って、GeometryReader 的な感じで必要な View で呼び出してみたりもしたんですが、結局 window を使うと影響範囲が小さくすむし、挙動がスムーズだったので、window を重ねて表示する方法を採用しました。
+LegacyTextField is used behind the SwiftUI because I need to toggle keyboard on show.
 
-方法は[@zntfdr](https://twitter.com/zntfdr)さんの、[How to layer multiple windows in SwiftUI](https://www.fivestars.blog/articles/swiftui-windows/)をほぼそのまま採用しました。
+I basically referred articles via [stackoverflow](https://stackoverflow.com/questions/56507839/swiftui-how-to-make-textfield-become-first-responder) and [hackingwithswift](https://www.hackingwithswift.com/example-code/uikit/how-to-limit-the-number-of-characters-in-a-uitextfield-or-uitextview).
 
-window の取り回しが垣間見えるのは、
+I think you should better to use `@FocusState` if the target OS is over iOS 15.
+
+#### 3. Shake animation
+
+I have no idea to achieve shake animation by myself, so I reffered [stack overflow](https://stackoverflow.com/questions/61619013/is-there-a-better-way-to-implement-a-shake-animation-in-swiftui).
+
+Then, to achieve reset function after shakeanimation, I utilised `onAnimationCompleted` callback as written on [ANTOINE VAN DER LEE's article](https://www.avanderlee.com/swiftui/withanimation-completion-callback/).
+
+---
+
+### The Window handling
+
+I tried...
+
+- `.fullScreenCover`
+- Custom View(Struct) where you can use passcode view like `GeometryReader{ proxy in ... }`
+
+But, I found that controlling `Window` has less affection towards existing code base and works smoother than the owther methods. So, I adopt layered Window methods.
+
+Thanks to the article: [How to layer multiple windows in SwiftUI](https://www.fivestars.blog/articles/swiftui-windows/) by [@zntfdr](https://twitter.com/zntfdr), I could implement layered window. I really appreciated.
+
+Anyways, you can find how window works on these files:
 
 - SceneDelegate.swift
 - PassThroughWindow.swift
 
-です。
+located here https://github.com/mitolog/SwiftUI-Passcode/tree/main/PasscodeSample .
 
-考え方としては、PassThroughWindow をメインの Window の上に常に置いておき、Passcode を非表示としたいときは、背景色を Clear とします。それによって、下にあるメインの Window 配下の view が見えるようになっています。
+The key concept is like this:
 
-ではどうやってタッチイベントをメインの Window におくっているかといと、PassThroughWindow がオーバーライドしているの hitTest です。
+Basically we put `PassThroughWindow` in front of the main window.
+If you want to hide the Passcode, set the background color `clear` so that you can see the view behind it which is the main window's view.
+
+So, how we can pass the touch event to the main window? We can achieve it like this:
 
 ```swift
 class PassThroughWindow: UIWindow {
@@ -105,26 +130,31 @@ class PassThroughWindow: UIWindow {
 }
 ```
 
-nil を返すと、PassThroughWindow はこのタッチイベントに関与しないことを宣言し、もう一方のメインの Window に処理が渡るようです。
+PassThroughWindow is the window that PasscodeView is on.
 
-hitView には、
+If we returns `nil` here, The PassThroughWindow declares this touch event doesn't relevalent to the view underneath.
+So, the event will be passed to the next window which is the main window.
 
-- パスコード表示時は PasscodeView 配下の何かしらの view
-- パスコード非表示時は、PasscodeView の rootView(clear 指定した view)
+To say it more concretely, we can attain hitView as follows...
 
-が入ってくるので、結果として、意図した通りに動作するようになっています。
+- When Passcode is shown, hitView would be certain view under the PasscodeView
+- When Passcode is hidden, hitView would be a rootView, where you set it as clear background, of the PasscodeView
 
-### ステートの共有
+So, it would work as you expected as a result.
 
-サンプルでは、特にステートを window 間で共有してないですが、SceneDelegate.swift で `let appState = Store<AppState>(AppState())` とすることで single source of truth として扱い、各 view に振り分けられるようにしています。
+---
 
-ステートの共有は、実プロジェクトでは https://github.com/nalexn/clean-architecture-swiftui をベースにしています。今回はあくまでサンプルなので、考え方として必要な部分だけ引っ張ってきました。
+### The State handling
 
-## 今後
+Within the sample, I don't sync the state among windows. But, You can sync by using `let appState = Store<AppState>(AppState())` defined on SceneDelegate.swift where you can deal the appState as a single source of truth.
 
-需要があれば、
+You can refer actual state handling via https://github.com/nalexn/clean-architecture-swiftui that I use it on the project ongoing.
 
-- テスト書く
-- SwiftPackage に登録する
+## Next step...
 
-などしたいです。なので、いい感じに使いたければ[github](https://github.com/mitolog/SwiftUI-Passcode)で star つけてね！
+If there are some comments or needs, I'd like to
+
+- write some tests
+- register SwiftPackages
+
+If you have any comments or think it useful, please add a star on https://github.com/mitolog/SwiftUI-Passcode !
