@@ -9,6 +9,7 @@
       <link>https://marginals.jp/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
     <lastBuildDate>Sat, 09 Jul 2022 00:00:03 +0900</lastBuildDate><atom:link href="https://marginals.jp/ja/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SwiftUI で Passcode のサンプルを作ってみた</title>
@@ -34,7 +35,7 @@ ShakeAnimation は、皆さんおなじみstack overflowより。そして、シ
       <pubDate>Mon, 15 Mar 2021 00:00:03 +0900</pubDate>
       
       <guid>https://marginals.jp/ja/posts/marginals/profile/</guid>
-      <description>会社概要 会社名 Marginals LLC. 代表 宮里 悠平 設立 2021 年 3 月 資本金 2 百万円 事業内容 モバイルアプリの受託・新規開発 住所 〒 154-0046 東京都渋谷区松濤 1 丁目 28-2 </description>
+      <description>会社概要 会社名 Marginals LLC. 代表社員 宮里 悠平 設立 2021 年 3 月 資本金 2,000,000 円 事業内容 モバイルアプリの受託・新規開発、ITサービス全般 住所 〒 130-0013 東京都墨田区錦糸１丁目２－１アルカセントラル１４階 </description>
     </item>
     
   </channel>
