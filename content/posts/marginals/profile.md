@@ -45,4 +45,4 @@ editPost:
 | Established    | 2021, March                                        |
 | Capital        | 2,000,000 JPY                                      |
 | Services       | Mobile app development                             |
-| Address        | 154-0046 1-28-2, Syoutou, Shibuya-ku, Tokyo, Japan |
+| Address        | 130-0013 Arca Central 14F, 1-2-1, Kinshi, Sumida-ku, Tokyo, Japan |
